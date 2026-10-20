@@ -1,4 +1,5 @@
-import 'package:e_commerce_app/constants.dart';
+
+import 'package:e_commerce_app/core/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -32,7 +33,7 @@ class PageViewItem extends StatelessWidget {
               ),
               Visibility(
                 visible:isVisible ,
-                child: Padding(padding: const EdgeInsets.all(16.0), child: Text('تخط'))),
+                child: Padding(padding: const EdgeInsets.all(16.0), child: Text('تخط',style: TextStyles.regular13.copyWith(color: Color(0xff949D9E)),))),
             ],
           ),
         ),
@@ -40,8 +41,8 @@ class PageViewItem extends StatelessWidget {
         title,
         const SizedBox(height: 24,),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal:  kHorizintalPadding),
-          child: Text(subtitle, textAlign: TextAlign.center),
+          padding: const EdgeInsets.symmetric(horizontal:  37),
+          child: Text(subtitle,style: TextStyles.semiBold13.copyWith(color:Color(0xff4E5456) ), textAlign: TextAlign.center),
         ),
         
       ],
